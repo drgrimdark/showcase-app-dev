@@ -31,6 +31,7 @@ class ViewController: UIViewController {
       } else {
         let accessToken = FBSDKAccessToken.currentAccessToken().tokenString
         
+        print("Successfully logged into facebook \(accessToken)")
       }
     }
   }
