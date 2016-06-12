@@ -30,6 +30,7 @@ class ViewController: UIViewController {
         print("Facebook login failed. Error \(facebookError)")
       } else {
         let accessToken = FBSDKAccessToken.currentAccessToken().tokenString
+        
       }
     }
   }
