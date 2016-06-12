@@ -20,9 +20,17 @@
 		CE0E1F4A1D060D3E00D4E85C /* MaterialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0E1F491D060D3E00D4E85C /* MaterialView.swift */; };
 		CE0E1F4D1D060DE700D4E85C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0E1F4C1D060DE700D4E85C /* Constants.swift */; };
 		CE0E1F4F1D06133B00D4E85C /* MaterialButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0E1F4E1D06133B00D4E85C /* MaterialButton.swift */; };
+		CE74B7A91D0765DC00122F88 /* MaterialTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE74B7A81D0765DC00122F88 /* MaterialTextField.swift */; };
+		CE74B7AE1D07845B00122F88 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE74B7AB1D07845B00122F88 /* Bolts.framework */; };
+		CE74B7AF1D07845B00122F88 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE74B7AC1D07845B00122F88 /* FBSDKCoreKit.framework */; };
+		CE74B7B01D07845B00122F88 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE74B7AD1D07845B00122F88 /* FBSDKLoginKit.framework */; };
+		EF5C8BA4AAA09D51EEB36C64 /* Pods_showcase_app_dev.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81C042E3A339B7B1637C2DF1 /* Pods_showcase_app_dev.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		61FDE86D9CEBB10A1890E0A2 /* Pods-showcase-app-dev.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-showcase-app-dev.debug.xcconfig"; path = "Pods/Target Support Files/Pods-showcase-app-dev/Pods-showcase-app-dev.debug.xcconfig"; sourceTree = "<group>"; };
+		7818AFBFDABEA53C85EF0FA6 /* Pods-showcase-app-dev.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-showcase-app-dev.release.xcconfig"; path = "Pods/Target Support Files/Pods-showcase-app-dev/Pods-showcase-app-dev.release.xcconfig"; sourceTree = "<group>"; };
+		81C042E3A339B7B1637C2DF1 /* Pods_showcase_app_dev.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_showcase_app_dev.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE0E1F251D06096B00D4E85C /* showcase-app-dev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "showcase-app-dev.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE0E1F281D06096B00D4E85C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE0E1F2A1D06096B00D4E85C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -38,6 +46,10 @@
 		CE0E1F491D060D3E00D4E85C /* MaterialView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialView.swift; sourceTree = "<group>"; };
 		CE0E1F4C1D060DE700D4E85C /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		CE0E1F4E1D06133B00D4E85C /* MaterialButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialButton.swift; sourceTree = "<group>"; };
+		CE74B7A81D0765DC00122F88 /* MaterialTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialTextField.swift; sourceTree = "<group>"; };
+		CE74B7AB1D07845B00122F88 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		CE74B7AC1D07845B00122F88 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		CE74B7AD1D07845B00122F88 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +57,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE74B7AE1D07845B00122F88 /* Bolts.framework in Frameworks */,
+				CE74B7AF1D07845B00122F88 /* FBSDKCoreKit.framework in Frameworks */,
+				CE74B7B01D07845B00122F88 /* FBSDKLoginKit.framework in Frameworks */,
+				EF5C8BA4AAA09D51EEB36C64 /* Pods_showcase_app_dev.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,6 +72,8 @@
 			children = (
 				CE0E1F271D06096B00D4E85C /* showcase-app-dev */,
 				CE0E1F261D06096B00D4E85C /* Products */,
+				F3FB5606158CEE274E10B4B7 /* Pods */,
+				FEDE6AE1574AAC9BE5528716 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -70,6 +88,7 @@
 		CE0E1F271D06096B00D4E85C /* showcase-app-dev */ = {
 			isa = PBXGroup;
 			children = (
+				CE74B7AA1D07844600122F88 /* Frameworks */,
 				CE0E1F4B1D060DCF00D4E85C /* Util */,
 				CE0E1F401D06099F00D4E85C /* Resources */,
 				CE0E1F3F1D06099400D4E85C /* Model */,
@@ -98,6 +117,7 @@
 			children = (
 				CE0E1F491D060D3E00D4E85C /* MaterialView.swift */,
 				CE0E1F4E1D06133B00D4E85C /* MaterialButton.swift */,
+				CE74B7A81D0765DC00122F88 /* MaterialTextField.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -128,6 +148,33 @@
 			name = Util;
 			sourceTree = "<group>";
 		};
+		CE74B7AA1D07844600122F88 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CE74B7AB1D07845B00122F88 /* Bolts.framework */,
+				CE74B7AC1D07845B00122F88 /* FBSDKCoreKit.framework */,
+				CE74B7AD1D07845B00122F88 /* FBSDKLoginKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F3FB5606158CEE274E10B4B7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				61FDE86D9CEBB10A1890E0A2 /* Pods-showcase-app-dev.debug.xcconfig */,
+				7818AFBFDABEA53C85EF0FA6 /* Pods-showcase-app-dev.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		FEDE6AE1574AAC9BE5528716 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				81C042E3A339B7B1637C2DF1 /* Pods_showcase_app_dev.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +182,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CE0E1F3A1D06096B00D4E85C /* Build configuration list for PBXNativeTarget "showcase-app-dev" */;
 			buildPhases = (
+				3811CD9A351C2562C50E1BDE /* 📦 Check Pods Manifest.lock */,
 				CE0E1F211D06096B00D4E85C /* Sources */,
 				CE0E1F221D06096B00D4E85C /* Frameworks */,
 				CE0E1F231D06096B00D4E85C /* Resources */,
+				17D20B57FE491344EB894366 /* 📦 Embed Pods Frameworks */,
+				8A70DF98650BD9FA17F69AF0 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -199,6 +249,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		17D20B57FE491344EB894366 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-showcase-app-dev/Pods-showcase-app-dev-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3811CD9A351C2562C50E1BDE /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		8A70DF98650BD9FA17F69AF0 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-showcase-app-dev/Pods-showcase-app-dev-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		CE0E1F211D06096B00D4E85C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -210,6 +308,7 @@
 				CE0E1F2B1D06096B00D4E85C /* ViewController.swift in Sources */,
 				CE0E1F291D06096B00D4E85C /* AppDelegate.swift in Sources */,
 				CE0E1F4A1D060D3E00D4E85C /* MaterialView.swift in Sources */,
+				CE74B7A91D0765DC00122F88 /* MaterialTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,6 +355,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_BITCODE = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -302,6 +402,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = NO;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -322,22 +423,34 @@
 		};
 		CE0E1F3B1D06096B00D4E85C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 61FDE86D9CEBB10A1890E0A2 /* Pods-showcase-app-dev.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/showcase-app-dev",
+				);
 				INFOPLIST_FILE = "showcase-app-dev/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.littlelujanllc.showcase-app-dev";
+				PRODUCT_BUNDLE_IDENTIFIER = com.littlelujanllc.showcase;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
 		};
 		CE0E1F3C1D06096B00D4E85C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7818AFBFDABEA53C85EF0FA6 /* Pods-showcase-app-dev.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/showcase-app-dev",
+				);
 				INFOPLIST_FILE = "showcase-app-dev/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.littlelujanllc.showcase-app-dev";
+				PRODUCT_BUNDLE_IDENTIFIER = com.littlelujanllc.showcase;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -361,6 +474,7 @@
 				CE0E1F3C1D06096B00D4E85C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

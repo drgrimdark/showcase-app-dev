@@ -10,6 +10,8 @@
             <string>NotoSans-Bold</string>
             <string>NotoSans-Bold</string>
             <string>NotoSans-Bold</string>
+            <string>NotoSans-Bold</string>
+            <string>NotoSans-Bold</string>
         </mutableArray>
     </customFonts>
     <scenes>
@@ -64,7 +66,7 @@
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fb-icon" translatesAutoresizingMaskIntoConstraints="NO" id="irR-N4-tl6">
                                                 <rect key="frame" x="0.0" y="22" width="65" height="65"/>
                                             </imageView>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FzZ-pZ-X7C" customClass="MaterialButton" customModule="showcase_app_dev" customModuleProvider="target">
+                                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FzZ-pZ-X7C" customClass="MaterialButton" customModule="showcase_app_dev" customModuleProvider="target">
                                                 <rect key="frame" x="105" y="38" width="415" height="33"/>
                                                 <color key="backgroundColor" red="0.11764705882352941" green="0.53333333333333333" blue="0.89803921568627454" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" name="NotoSans-Bold" family="Noto Sans" pointSize="15"/>
@@ -103,14 +105,65 @@
                                             </button>
                                         </subviews>
                                     </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email Login / Sign Up" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C0U-n1-pdh">
+                                        <rect key="frame" x="20" y="20" width="186" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="186" id="rTR-eZ-PvJ"/>
+                                            <constraint firstAttribute="height" constant="21" id="sNu-cE-bP2"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="NotoSans-Bold" family="Noto Sans" pointSize="17"/>
+                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3bT-Fa-TAv" customClass="MaterialTextField" customModule="showcase_app_dev" customModuleProvider="target">
+                                        <rect key="frame" x="20" y="61" width="520" height="35"/>
+                                        <color key="backgroundColor" red="0.95294117647058818" green="0.95294117647058818" blue="0.95294117647058818" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="35" id="lmv-r3-yA6"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mZF-An-uYl" customClass="MaterialTextField" customModule="showcase_app_dev" customModuleProvider="target">
+                                        <rect key="frame" x="20" y="116" width="520" height="35"/>
+                                        <color key="backgroundColor" red="0.95294117649999999" green="0.95294117649999999" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="35" id="7mv-YH-ccW"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hBR-SF-xTF" customClass="MaterialButton" customModule="showcase_app_dev" customModuleProvider="target">
+                                        <rect key="frame" x="182" y="201" width="196" height="33"/>
+                                        <color key="backgroundColor" red="0.95686274510000002" green="0.31764705879999999" blue="0.1176470588" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="33" id="BGM-y6-TP3"/>
+                                            <constraint firstAttribute="width" constant="196" id="R4y-tA-n3X"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="NotoSans-Bold" family="Noto Sans" pointSize="15"/>
+                                        <state key="normal" title="Login / Sign Up">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="3bT-Fa-TAv" secondAttribute="trailing" constant="20" id="2VY-ln-Alq"/>
+                                    <constraint firstItem="hBR-SF-xTF" firstAttribute="centerX" secondItem="E4B-N2-YVO" secondAttribute="centerX" id="5Hi-TJ-89Z"/>
+                                    <constraint firstAttribute="trailing" secondItem="mZF-An-uYl" secondAttribute="trailing" constant="20" id="8kL-99-53I"/>
+                                    <constraint firstItem="3bT-Fa-TAv" firstAttribute="top" secondItem="C0U-n1-pdh" secondAttribute="bottom" constant="20" id="CUF-CI-Wpd"/>
+                                    <constraint firstItem="mZF-An-uYl" firstAttribute="trailing" secondItem="3bT-Fa-TAv" secondAttribute="trailing" id="GHE-gA-acy"/>
+                                    <constraint firstItem="3bT-Fa-TAv" firstAttribute="leading" secondItem="C0U-n1-pdh" secondAttribute="leading" id="SN7-oR-og7"/>
                                     <constraint firstItem="j1g-mF-Fxe" firstAttribute="leading" secondItem="E4B-N2-YVO" secondAttribute="leading" constant="20" id="T7D-RM-Dft"/>
                                     <constraint firstAttribute="height" constant="128" id="TZe-Sk-eBC"/>
                                     <constraint firstAttribute="bottom" secondItem="j1g-mF-Fxe" secondAttribute="bottom" constant="10" id="Wd9-I7-c6L"/>
+                                    <constraint firstItem="C0U-n1-pdh" firstAttribute="top" secondItem="E4B-N2-YVO" secondAttribute="top" constant="20" id="cfu-od-2lo"/>
+                                    <constraint firstItem="C0U-n1-pdh" firstAttribute="leading" secondItem="E4B-N2-YVO" secondAttribute="leading" constant="20" id="dhR-xl-IzZ"/>
                                     <constraint firstItem="j1g-mF-Fxe" firstAttribute="top" secondItem="E4B-N2-YVO" secondAttribute="top" constant="10" id="gmC-X0-jSp"/>
+                                    <constraint firstItem="mZF-An-uYl" firstAttribute="top" secondItem="3bT-Fa-TAv" secondAttribute="bottom" constant="20" id="j7X-An-JA6"/>
                                     <constraint firstAttribute="trailing" secondItem="j1g-mF-Fxe" secondAttribute="trailing" constant="20" id="jMg-mU-AYL"/>
+                                    <constraint firstItem="mZF-An-uYl" firstAttribute="leading" secondItem="3bT-Fa-TAv" secondAttribute="leading" id="vfZ-Bn-q2g"/>
+                                    <constraint firstItem="hBR-SF-xTF" firstAttribute="top" secondItem="mZF-An-uYl" secondAttribute="bottom" constant="50" id="zOu-NS-76s"/>
                                 </constraints>
                                 <variation key="default">
                                     <mask key="subviews">
@@ -118,10 +171,11 @@
                                     </mask>
                                     <mask key="constraints">
                                         <exclude reference="TZe-Sk-eBC"/>
+                                        <exclude reference="T7D-RM-Dft"/>
+                                        <exclude reference="Wd9-I7-c6L"/>
                                         <exclude reference="gmC-X0-jSp"/>
                                         <exclude reference="jMg-mU-AYL"/>
-                                        <exclude reference="Wd9-I7-c6L"/>
-                                        <exclude reference="T7D-RM-Dft"/>
+                                        <exclude reference="8kL-99-53I"/>
                                     </mask>
                                 </variation>
                             </view>
