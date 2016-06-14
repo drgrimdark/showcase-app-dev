@@ -24,6 +24,7 @@
 		CE74B7AE1D07845B00122F88 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE74B7AB1D07845B00122F88 /* Bolts.framework */; };
 		CE74B7AF1D07845B00122F88 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE74B7AC1D07845B00122F88 /* FBSDKCoreKit.framework */; };
 		CE74B7B01D07845B00122F88 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE74B7AD1D07845B00122F88 /* FBSDKLoginKit.framework */; };
+		CEFB98E41D10ABEE0009B679 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFB98E31D10ABEE0009B679 /* DataService.swift */; };
 		EF5C8BA4AAA09D51EEB36C64 /* Pods_showcase_app_dev.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81C042E3A339B7B1637C2DF1 /* Pods_showcase_app_dev.framework */; };
 /* End PBXBuildFile section */
 
@@ -50,6 +51,7 @@
 		CE74B7AB1D07845B00122F88 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
 		CE74B7AC1D07845B00122F88 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
 		CE74B7AD1D07845B00122F88 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		CEFB98E31D10ABEE0009B679 /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +90,7 @@
 		CE0E1F271D06096B00D4E85C /* showcase-app-dev */ = {
 			isa = PBXGroup;
 			children = (
+				CEFB98E21D10AB790009B679 /* Services */,
 				CE74B7AA1D07844600122F88 /* Frameworks */,
 				CE0E1F4B1D060DCF00D4E85C /* Util */,
 				CE0E1F401D06099F00D4E85C /* Resources */,
@@ -156,6 +159,14 @@
 				CE74B7AD1D07845B00122F88 /* FBSDKLoginKit.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CEFB98E21D10AB790009B679 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				CEFB98E31D10ABEE0009B679 /* DataService.swift */,
+			);
+			name = Services;
 			sourceTree = "<group>";
 		};
 		F3FB5606158CEE274E10B4B7 /* Pods */ = {
@@ -309,6 +320,7 @@
 				CE0E1F291D06096B00D4E85C /* AppDelegate.swift in Sources */,
 				CE0E1F4A1D060D3E00D4E85C /* MaterialView.swift in Sources */,
 				CE74B7A91D0765DC00122F88 /* MaterialTextField.swift in Sources */,
+				CEFB98E41D10ABEE0009B679 /* DataService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
