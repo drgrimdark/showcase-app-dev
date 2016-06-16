@@ -134,7 +134,7 @@
                                             <constraint firstAttribute="height" constant="35" id="7mv-YH-ccW"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hBR-SF-xTF" customClass="MaterialButton" customModule="showcase_app_dev" customModuleProvider="target">
                                         <rect key="frame" x="182" y="201" width="196" height="33"/>
@@ -147,6 +147,9 @@
                                         <state key="normal" title="Login / Sign Up">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="attemptLogin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ut4-vk-Rz9"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -198,6 +201,8 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="emailField" destination="3bT-Fa-TAv" id="2iQ-45-lS6"/>
+                        <outlet property="passwordField" destination="mZF-An-uYl" id="MSI-PQ-Eak"/>
                         <segue destination="yzh-SV-AFy" kind="show" identifier="loggedIn" id="SBS-83-Aff"/>
                     </connections>
                 </viewController>
