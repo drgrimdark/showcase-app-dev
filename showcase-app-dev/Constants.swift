@@ -17,7 +17,7 @@ let KEY_UID = "uid"
 
 //Segues
 
-let SEGUE_LOGGED_IN = "loggedin"
+let SEGUE_LOGGED_IN = "loggedIn"
 
 // Status codes 
 
