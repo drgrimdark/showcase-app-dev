@@ -34,7 +34,6 @@ class PostCell: UITableViewCell {
     func configureCell(post: Post, img: UIImage?) {
         self.post = post
         
-        if let desc = post.postDescription {
             self.descriptionText.text = post.postDescription
             self.likesLbl.text = "\(post.likes)"
             
@@ -43,12 +42,17 @@ class PostCell: UITableViewCell {
                 if img != nil {
                     self.showcaseImg.image = img
                 } else {
-                    request = Alamofire.request(.GET, <#T##URLString: URLStringConvertible##URLStringConvertible#>)
+                    request = Alamofire.request(.GET, post.imageUrl!).validate(contentType: ["image/*"]).response(completionHandler: { (request, response, data, err) in
+                        if err == nil {
+                            let img = UIImage(data: data!)!
+                            self.showcaseImg.image = img
+                            FeedVC.imageCache.setObject(img, forKey: self.post.imageUrl!)
+                        }
+                    })
                 }
                 
             } else {
                 self.showcaseImg.hidden = true
             }
-        }
     }
 }

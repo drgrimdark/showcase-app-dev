@@ -19,8 +19,10 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-      tableView.delegate = self
-      tableView.dataSource = self
+        tableView.delegate = self
+        tableView.dataSource = self
+        
+        tableView.estimatedRowHeight = 358
         
         DataService.ds.REF_POSTS.observeEventType(.Value, withBlock: { snapshot in
             print(snapshot.value)
@@ -58,6 +60,8 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
         if let cell = tableView.dequeueReusableCellWithIdentifier("PostCell") as? PostCell {
             
+            cell.request?.cancel()
+            
             var img: UIImage?
             
             if let url = post.imageUrl {
@@ -69,6 +73,15 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
             return cell
         }else{
             return PostCell()
+        }
+    }
+    func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+        let post = posts[indexPath.row]
+        
+        if post.imageUrl == nil {
+            return 150
+        } else {
+            return tableView.estimatedRowHeight
         }
     }
 }
