@@ -7,4 +7,5 @@ target 'showcase-app-dev' do
 
   # Pods for showcase-app-dev
   pod 'Firebase', '= 2.5.1'
+  pod 'Alamofire', '~> 3.4'
 end

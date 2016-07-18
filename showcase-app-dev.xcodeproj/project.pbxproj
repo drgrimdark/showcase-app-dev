@@ -26,6 +26,7 @@
 		CE9019A11D1230E600970715 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE9019A01D1230E600970715 /* Assets.xcassets */; };
 		CE9019A31D1CB89C00970715 /* FeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9019A21D1CB89C00970715 /* FeedVC.swift */; };
 		CE9019A51D1CBA4B00970715 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9019A41D1CBA4B00970715 /* PostCell.swift */; };
+		CE95B8221D3C81C40067CE96 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE95B8211D3C81C40067CE96 /* Post.swift */; };
 		CEFB98E41D10ABEE0009B679 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFB98E31D10ABEE0009B679 /* DataService.swift */; };
 		EF5C8BA4AAA09D51EEB36C64 /* Pods_showcase_app_dev.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81C042E3A339B7B1637C2DF1 /* Pods_showcase_app_dev.framework */; };
 /* End PBXBuildFile section */
@@ -55,6 +56,7 @@
 		CE9019A01D1230E600970715 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE9019A21D1CB89C00970715 /* FeedVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedVC.swift; sourceTree = "<group>"; };
 		CE9019A41D1CBA4B00970715 /* PostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
+		CE95B8211D3C81C40067CE96 /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		CEFB98E31D10ABEE0009B679 /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -134,6 +136,7 @@
 		CE0E1F3F1D06099400D4E85C /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				CE95B8211D3C81C40067CE96 /* Post.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -320,6 +323,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE9019A31D1CB89C00970715 /* FeedVC.swift in Sources */,
+				CE95B8221D3C81C40067CE96 /* Post.swift in Sources */,
 				CE0E1F4D1D060DE700D4E85C /* Constants.swift in Sources */,
 				CE0E1F311D06096B00D4E85C /* showcase_app_dev.xcdatamodeld in Sources */,
 				CE0E1F4F1D06133B00D4E85C /* MaterialButton.swift in Sources */,
