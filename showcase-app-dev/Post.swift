@@ -31,6 +31,11 @@ class Post{
         return _username
     }
     
+    var postKey: String {
+        return _postKey
+    }
+    
+    
     init(description: String, imageUrl: String?, username: String) {
         self._postDescription = description
         self._imageUrl = imageUrl
@@ -51,5 +56,7 @@ class Post{
         if let desc = dictionary["description"] as? String {
             self._postDescription = desc
         }
+        self._postRef
     }
+    
 }
