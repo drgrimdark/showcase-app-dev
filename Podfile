@@ -6,6 +6,8 @@ target 'showcase-app-dev' do
   use_frameworks!
 
   # Pods for showcase-app-dev
-  pod 'Firebase', '= 2.5.1'
-  pod 'Alamofire', '~> 2.0'
+  pod 'Firebase/Core'
+  pod 'Firebase/Auth'
+  pod 'Firebase/Database'
+  pod 'Alamofire', '~> 3.4'
 end

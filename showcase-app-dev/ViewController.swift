@@ -9,6 +9,7 @@
 import UIKit
 import FBSDKCoreKit
 import FBSDKLoginKit
+import Firebase
 
 class ViewController: UIViewController {
   
@@ -38,17 +39,18 @@ class ViewController: UIViewController {
         let accessToken = FBSDKAccessToken.currentAccessToken().tokenString
         print("Successfully logged into facebook \(accessToken)")
         
-        DataService.ds.REF_BASE.authWithOAuthProvider( "facebook" , token: accessToken, withCompletionBlock: { error, authData in
-          
+        let credential = FIRFacebookAuthProvider.credentialWithAccessToken(FBSDKAccessToken.currentAccessToken().tokenString)
+        
+        FIRAuth.auth()?.signInWithCredential(credential, completion: { (user, error) in
           if error != nil {
             print("login Failed")
           } else {
-            print("Login Success! \(authData)")
+            print("Login Success! \(user)")
             
-            let user = ["provider": authData.provider!]
-            DataService.ds.createFirebaseUser(authData.uid, user: user)
+            let userData = ["provider": credential.provider]
+            DataService.ds.createFirebaseUser(user!.uid, user: userData)
             
-            NSUserDefaults.standardUserDefaults().setValue(authData.uid, forKey: KEY_UID)
+            NSUserDefaults.standardUserDefaults().setValue(user!.uid, forKey: KEY_UID)
             self.performSegueWithIdentifier(SEGUE_LOGGED_IN, sender: nil)
           }
           
@@ -63,23 +65,22 @@ class ViewController: UIViewController {
     
     if let email = emailField.text where email != "", let pwd = passwordField.text where pwd != "" {
       
-      DataService.ds.REF_BASE.authUser(email, password: pwd, withCompletionBlock: { error, authData in
+        FIRAuth.auth()?.signInWithEmail(email, password: pwd, completion: { (user, error) in
         
         if error != nil {
           print(error)
           
-          if error.code == STATUS_ACCOUNT_NONEXIST {
-            DataService.ds.REF_BASE.createUser(email, password: pwd, withValueCompletionBlock: { error, result  in
-              
-              if error != nil {
-                self.showErrorAlert("Could not create account", msg: "Problem creating account. Try something else")
-              } else {
-                NSUserDefaults.standardUserDefaults().setValue(result[KEY_UID], forKey: KEY_UID)
+          if error!.code == STATUS_ACCOUNT_NONEXIST {
+            FIRAuth.auth()?.createUserWithEmail(email, password: pwd, completion: { (user, error) in
                 
-                DataService.ds.REF_BASE.authUser(email, password: pwd, withCompletionBlock: {err, authData in
-                    let user = ["provider": authData.provider!]
-                    DataService.ds.createFirebaseUser(authData.uid, user: user)
-                })
+                if error != nil {
+                    self.showErrorAlert("Could not create account", msg: "Problem creating account. Try something else. Password must be 6 characters minimum.")
+                } else {
+                    NSUserDefaults.standardUserDefaults().setValue(user?.uid, forKey: KEY_UID)
+                    
+                        let userData = ["provider": "email"]
+                        DataService.ds.createFirebaseUser(user!.uid, user: userData)
+                
                 self.performSegueWithIdentifier(SEGUE_LOGGED_IN, sender: nil)
                 
               }

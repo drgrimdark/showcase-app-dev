@@ -20,31 +20,28 @@ class PostCell: UITableViewCell {
     
     var post: Post!
     var request: Request?
-    var likeRef: Firebase!
+    var likeRef: FIRDatabaseReference!
     
     override func awakeFromNib() {
         super.awakeFromNib()
         
-        let tap = UITapGestureRecognizer(target: self, action: "likeTapped:")
+        let tap = UITapGestureRecognizer(target: self, action: #selector(PostCell.likeTapped(_:)))
         tap.numberOfTapsRequired = 1
         likeImage.addGestureRecognizer(tap)
         likeImage.userInteractionEnabled = true
-        
-        
+
     }
     override func drawRect(rect: CGRect) {
         
         profileImg.layer.cornerRadius = profileImg.frame.size.width / 2
         profileImg.clipsToBounds = true
-        
         showcaseImg.clipsToBounds = true
         
     }
 
     func configureCell(post: Post, img: UIImage?) {
         self.post = post
-        likeRef = DataService.ds.REF_USER_CURRENT.childByAppendingPath("likes").childByAppendingPath(post.postKey)
-        
+        likeRef = DataService.ds.REF_USER_CURRENT.child("likes").child(post.postKey)
             self.descriptionText.text = post.postDescription
             self.likesLbl.text = "\(post.likes)"
             
@@ -75,20 +72,21 @@ class PostCell: UITableViewCell {
         
     })
     
-        func likeTapped(sender: UITapGestureRecognizer) {
-        
-            likeRef.observeSingleEventOfType(.Value, withBlock: { snapshot in
-                if let doesNotExist = snapshot.value as? NSNull {
-                    self.likeImage.image = UIImage(named: "heart-full")
-                    self.post.ajustLikes(true)
-                    self.likeRef.setValue(true)
-                    
-                } else {
-                    self.likeImage.image = UIImage(named: "heart-empty")
-                    self.post.ajustLikes(false)
-                    self.likeRef.removeValue()
-                }
-            })
         }
+    func likeTapped(sender: UITapGestureRecognizer) {
+        
+        likeRef.observeSingleEventOfType(.Value, withBlock: { snapshot in
+            if let doesNotExsist = snapshot.value as? NSNull {
+                self.likeImage.image = UIImage(named: "heart-full")
+                self.post!.ajustLikes(true)
+                self.likeRef.setValue(true)
+                
+            } else {
+                self.likeImage.image = UIImage(named: "heart-empty")
+                self.post!.ajustLikes(false)
+                self.likeRef.removeValue()
+            }
+        })
+
     }
 }

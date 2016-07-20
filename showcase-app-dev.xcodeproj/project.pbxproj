@@ -23,6 +23,7 @@
 		CE74B7AE1D07845B00122F88 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE74B7AB1D07845B00122F88 /* Bolts.framework */; };
 		CE74B7AF1D07845B00122F88 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE74B7AC1D07845B00122F88 /* FBSDKCoreKit.framework */; };
 		CE74B7B01D07845B00122F88 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE74B7AD1D07845B00122F88 /* FBSDKLoginKit.framework */; };
+		CE8BBCD71D3EB93100C9D365 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CE8BBCD61D3EB93100C9D365 /* GoogleService-Info.plist */; };
 		CE9019A11D1230E600970715 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE9019A01D1230E600970715 /* Assets.xcassets */; };
 		CE9019A31D1CB89C00970715 /* FeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9019A21D1CB89C00970715 /* FeedVC.swift */; };
 		CE9019A51D1CBA4B00970715 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9019A41D1CBA4B00970715 /* PostCell.swift */; };
@@ -53,6 +54,7 @@
 		CE74B7AB1D07845B00122F88 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
 		CE74B7AC1D07845B00122F88 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
 		CE74B7AD1D07845B00122F88 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		CE8BBCD61D3EB93100C9D365 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		CE9019A01D1230E600970715 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE9019A21D1CB89C00970715 /* FeedVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedVC.swift; sourceTree = "<group>"; };
 		CE9019A41D1CBA4B00970715 /* PostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
@@ -78,6 +80,7 @@
 		CE0E1F1C1D06096B00D4E85C = {
 			isa = PBXGroup;
 			children = (
+				CE8BBCD61D3EB93100C9D365 /* GoogleService-Info.plist */,
 				CE0E1F271D06096B00D4E85C /* showcase-app-dev */,
 				CE0E1F261D06096B00D4E85C /* Products */,
 				F3FB5606158CEE274E10B4B7 /* Pods */,
@@ -258,6 +261,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE0E1F451D0609B700D4E85C /* NotoSans-Bold.ttf in Resources */,
+				CE8BBCD71D3EB93100C9D365 /* GoogleService-Info.plist in Resources */,
 				CE0E1F361D06096B00D4E85C /* LaunchScreen.storyboard in Resources */,
 				CE0E1F461D0609B700D4E85C /* NotoSans-BoldItalic.ttf in Resources */,
 				CE0E1F471D0609B700D4E85C /* NotoSans-Italic.ttf in Resources */,

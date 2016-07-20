@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AD_UNIT_ID_FOR_BANNER_TEST</key>
+	<string>ca-app-pub-3940256099942544/2934735716</string>
+	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
+	<string>ca-app-pub-3940256099942544/4411468910</string>
+	<key>CLIENT_ID</key>
+	<string>926617825904-351lps7gkg6obcn8j54dhe6j255p0sad.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.926617825904-351lps7gkg6obcn8j54dhe6j255p0sad</string>
+	<key>API_KEY</key>
+	<string>AIzaSyAooyc3KcQ7AA7xjbCkbOzIt-aGZZ259FI</string>
+	<key>GCM_SENDER_ID</key>
+	<string>926617825904</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.littlelujanllc.showcase</string>
+	<key>PROJECT_ID</key>
+	<string>littlelujan-showcase</string>
+	<key>STORAGE_BUCKET</key>
+	<string>littlelujan-showcase.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<true/>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false/>
+	<key>IS_APPINVITE_ENABLED</key>
+	<false/>
+	<key>IS_GCM_ENABLED</key>
+	<true/>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true/>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:926617825904:ios:eec77f3734dd9a2b</string>
+	<key>DATABASE_URL</key>
+	<string>https://littlelujan-showcase.firebaseio.com</string>
+</dict>
+</plist>

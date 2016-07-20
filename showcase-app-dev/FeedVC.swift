@@ -38,7 +38,7 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UIIm
             print(snapshot.value)
             
             self.posts = []
-            if let snapshots = snapshot.children.allObjects as? [FDataSnapshot] {
+            if let snapshots = snapshot.children.allObjects as? [FIRDataSnapshot] {
                 for snap in snapshots {
                     
                     if let postDict = snap.value as? Dictionary<String, AnyObject> {
@@ -124,9 +124,8 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UIIm
                     
                     switch encodingResult {
                     case .Success(let upload, _, _):
-                        upload.responseJSON(completionHandler: { request, response, result in
-                            if let info = result.value as? Dictionary<String, AnyObject> {
-                                
+                        upload.responseJSON(completionHandler: { response in
+                            if let info = response.result.value as? Dictionary<String, AnyObject> {
                                 if let links = info["links"] as? Dictionary<String, AnyObject> {
                                     print(links)
                                     if let imgLink = links["image_link"] as? String {
