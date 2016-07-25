@@ -29,10 +29,11 @@ class ViewController: UIViewController {
     }
   }
   
+        
   @IBAction func fbBtnPressed(sender: UIButton!){
     let facebookLogin = FBSDKLoginManager()
     
-    facebookLogin.logInWithReadPermissions(["email"]) { (facebookResult: FBSDKLoginManagerLoginResult!, facebookError:  NSError!) -> Void in
+    facebookLogin.logInWithReadPermissions(["email"], fromViewController: self, handler: { (facebookResult: FBSDKLoginManagerLoginResult!, facebookError:  NSError!) -> Void in
       if facebookError != nil{
         print("Facebook login failed. Error \(facebookError)")
       } else {
@@ -58,7 +59,7 @@ class ViewController: UIViewController {
         
         
       }
-    }
+    })
   }
   
   @IBAction func attemptLogin(sender: UIButton){

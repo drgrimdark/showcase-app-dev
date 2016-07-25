@@ -24,10 +24,11 @@
 		CE74B7AF1D07845B00122F88 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE74B7AC1D07845B00122F88 /* FBSDKCoreKit.framework */; };
 		CE74B7B01D07845B00122F88 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE74B7AD1D07845B00122F88 /* FBSDKLoginKit.framework */; };
 		CE8BBCD71D3EB93100C9D365 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CE8BBCD61D3EB93100C9D365 /* GoogleService-Info.plist */; };
-		CE9019A11D1230E600970715 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE9019A01D1230E600970715 /* Assets.xcassets */; };
 		CE9019A31D1CB89C00970715 /* FeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9019A21D1CB89C00970715 /* FeedVC.swift */; };
 		CE9019A51D1CBA4B00970715 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9019A41D1CBA4B00970715 /* PostCell.swift */; };
 		CE95B8221D3C81C40067CE96 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE95B8211D3C81C40067CE96 /* Post.swift */; };
+		CEA3441F1D40260C00FA0C42 /* SettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA3441E1D40260C00FA0C42 /* SettingsVC.swift */; };
+		CEDB61101D40101C00CCBE0A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEDB610F1D40101C00CCBE0A /* Assets.xcassets */; };
 		CEFB98E41D10ABEE0009B679 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFB98E31D10ABEE0009B679 /* DataService.swift */; };
 		EF5C8BA4AAA09D51EEB36C64 /* Pods_showcase_app_dev.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81C042E3A339B7B1637C2DF1 /* Pods_showcase_app_dev.framework */; };
 /* End PBXBuildFile section */
@@ -55,10 +56,11 @@
 		CE74B7AC1D07845B00122F88 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
 		CE74B7AD1D07845B00122F88 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
 		CE8BBCD61D3EB93100C9D365 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		CE9019A01D1230E600970715 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE9019A21D1CB89C00970715 /* FeedVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedVC.swift; sourceTree = "<group>"; };
 		CE9019A41D1CBA4B00970715 /* PostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
 		CE95B8211D3C81C40067CE96 /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		CEA3441E1D40260C00FA0C42 /* SettingsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsVC.swift; sourceTree = "<group>"; };
+		CEDB610F1D40101C00CCBE0A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CEFB98E31D10ABEE0009B679 /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -109,7 +111,7 @@
 				CE0E1F281D06096B00D4E85C /* AppDelegate.swift */,
 				CE0E1F2C1D06096B00D4E85C /* Main.storyboard */,
 				CE0E1F341D06096B00D4E85C /* LaunchScreen.storyboard */,
-				CE9019A01D1230E600970715 /* Assets.xcassets */,
+				CEDB610F1D40101C00CCBE0A /* Assets.xcassets */,
 				CE0E1F371D06096B00D4E85C /* Info.plist */,
 				CE0E1F2F1D06096B00D4E85C /* showcase_app_dev.xcdatamodeld */,
 			);
@@ -121,6 +123,7 @@
 			children = (
 				CE0E1F2A1D06096B00D4E85C /* ViewController.swift */,
 				CE9019A21D1CB89C00970715 /* FeedVC.swift */,
+				CEA3441E1D40260C00FA0C42 /* SettingsVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -265,8 +268,8 @@
 				CE0E1F361D06096B00D4E85C /* LaunchScreen.storyboard in Resources */,
 				CE0E1F461D0609B700D4E85C /* NotoSans-BoldItalic.ttf in Resources */,
 				CE0E1F471D0609B700D4E85C /* NotoSans-Italic.ttf in Resources */,
-				CE9019A11D1230E600970715 /* Assets.xcassets in Resources */,
 				CE0E1F2E1D06096B00D4E85C /* Main.storyboard in Resources */,
+				CEDB61101D40101C00CCBE0A /* Assets.xcassets in Resources */,
 				CE0E1F481D0609B700D4E85C /* NotoSans-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -331,6 +334,7 @@
 				CE0E1F4D1D060DE700D4E85C /* Constants.swift in Sources */,
 				CE0E1F311D06096B00D4E85C /* showcase_app_dev.xcdatamodeld in Sources */,
 				CE0E1F4F1D06133B00D4E85C /* MaterialButton.swift in Sources */,
+				CEA3441F1D40260C00FA0C42 /* SettingsVC.swift in Sources */,
 				CE0E1F2B1D06096B00D4E85C /* ViewController.swift in Sources */,
 				CE0E1F291D06096B00D4E85C /* AppDelegate.swift in Sources */,
 				CE0E1F4A1D060D3E00D4E85C /* MaterialView.swift in Sources */,

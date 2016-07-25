@@ -25,7 +25,8 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UIIm
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        
         tableView.delegate = self
         tableView.dataSource = self
         
@@ -52,6 +53,12 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UIIm
             self.tableView.reloadData()
             })
         }
+    
+    @IBAction func settingsButtonTapped(sender: UIButton) {
+        performSegueWithIdentifier("settingsTapped", sender: "settingsButtonTapped:")
+    }
+    
+
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
     
     return 1
