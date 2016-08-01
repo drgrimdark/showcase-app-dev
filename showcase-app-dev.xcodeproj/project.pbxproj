@@ -19,6 +19,7 @@
 		CE0E1F4A1D060D3E00D4E85C /* MaterialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0E1F491D060D3E00D4E85C /* MaterialView.swift */; };
 		CE0E1F4D1D060DE700D4E85C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0E1F4C1D060DE700D4E85C /* Constants.swift */; };
 		CE0E1F4F1D06133B00D4E85C /* MaterialButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0E1F4E1D06133B00D4E85C /* MaterialButton.swift */; };
+		CE53C2351D471AAE0070876B /* InfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE53C2341D471AAE0070876B /* InfoVC.swift */; };
 		CE74B7A91D0765DC00122F88 /* MaterialTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE74B7A81D0765DC00122F88 /* MaterialTextField.swift */; };
 		CE74B7AE1D07845B00122F88 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE74B7AB1D07845B00122F88 /* Bolts.framework */; };
 		CE74B7AF1D07845B00122F88 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE74B7AC1D07845B00122F88 /* FBSDKCoreKit.framework */; };
@@ -51,6 +52,7 @@
 		CE0E1F491D060D3E00D4E85C /* MaterialView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialView.swift; sourceTree = "<group>"; };
 		CE0E1F4C1D060DE700D4E85C /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		CE0E1F4E1D06133B00D4E85C /* MaterialButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialButton.swift; sourceTree = "<group>"; };
+		CE53C2341D471AAE0070876B /* InfoVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoVC.swift; sourceTree = "<group>"; };
 		CE74B7A81D0765DC00122F88 /* MaterialTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialTextField.swift; sourceTree = "<group>"; };
 		CE74B7AB1D07845B00122F88 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
 		CE74B7AC1D07845B00122F88 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
@@ -122,6 +124,7 @@
 			isa = PBXGroup;
 			children = (
 				CE0E1F2A1D06096B00D4E85C /* ViewController.swift */,
+				CE53C2341D471AAE0070876B /* InfoVC.swift */,
 				CE9019A21D1CB89C00970715 /* FeedVC.swift */,
 				CEA3441E1D40260C00FA0C42 /* SettingsVC.swift */,
 			);
@@ -340,6 +343,7 @@
 				CE0E1F4A1D060D3E00D4E85C /* MaterialView.swift in Sources */,
 				CE74B7A91D0765DC00122F88 /* MaterialTextField.swift in Sources */,
 				CEFB98E41D10ABEE0009B679 /* DataService.swift in Sources */,
+				CE53C2351D471AAE0070876B /* InfoVC.swift in Sources */,
 				CE9019A51D1CBA4B00970715 /* PostCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

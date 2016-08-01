@@ -158,7 +158,6 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UIIm
         var post: Dictionary<String, AnyObject> = [
         "description": postField.text!,
         "likes": 0
-        
         ]
         if imgUrl != nil {
             post["imageUrl"] = imgUrl!

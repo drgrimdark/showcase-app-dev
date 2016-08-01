@@ -36,12 +36,9 @@ class DataService {
         return user
     }
     
-    var REF_USER_CURRENT_USERNAME: FIRDatabaseReference {
-        let displayName = REF_USERS.child("displayName")
-        return displayName
-    }
     
     func createFirebaseUser (uid: String, user: Dictionary<String, String>) {
      REF_USERS.child(uid).setValue(user)
     }
+    
 }
